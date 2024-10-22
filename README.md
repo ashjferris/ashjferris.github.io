@@ -34,8 +34,44 @@ Check out the live version of my website here: (Coming Soon)
 ├── blog.html         # Blog page (Coming Soon)
 ├── cv.html           # CV/Resume page
 ├── contact.html      # Contact page
-├── css/
-│   └── styles.css    # Main stylesheet for the website
+├── css/              # Directory for css for the website
+├── js/               # Directory for javascript used in the website
 ├── images/           # Directory for images used in the website
 └── README.md         # This file
+```
+---
 
+## 🌟 How to Use
+**Prerequisites**
+Before using or contributing to this project, ensure you have the following installed:
+- A modern browser (Chrome, Firefox, etc.)
+- A code editor (VSCode etc.)
+- Git (for version control)
+
+**Steps to Run Locally**
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/data-scientist-website.git
+```
+
+2. Navigate into the project folder:
+
+```bash
+cd data-scientist-website
+```
+
+Open the index.html file in a browser. You can use a local server like the Live Server extension in VSCode.
+
+## 📝 Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to:
+1. Fork the repository
+2. Create a new branch (git checkout -b feature-idea)
+3. Commit your changes (git commit -m 'Add feature idea')
+4. Push to the branch (git push origin feature-idea)
+5. Open a pull request
+For major changes, please open an issue first to discuss what you'd like to change.
+
+
+## 🙌 Acknowledgments
+Inspiration for the design was taken from https://themewagon.com/themes/free-html5-personal-landing-page-template-noah/ and edited from here to suit my needs!
