@@ -17,7 +17,7 @@ Check out the live version of my website here: (Coming Soon)
 
 ---
 
-## 🧰 Technologies Used
+## 🧰 Tech Used
 
 - **HTML5**: For structuring the web pages.
 - **CSS3**: For styling the website, with a focus on a minimal and sleek aesthetic.
@@ -63,6 +63,8 @@ cd data-scientist-website
 
 Open the index.html file in a browser. You can use a local server like the Live Server extension in VSCode.
 
+---
+
 ## 📝 Contributing
 Contributions are welcome! If you have suggestions or improvements, feel free to:
 1. Fork the repository
@@ -70,8 +72,10 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 3. Commit your changes (git commit -m 'Add feature idea')
 4. Push to the branch (git push origin feature-idea)
 5. Open a pull request
+
 For major changes, please open an issue first to discuss what you'd like to change.
 
+---
 
 ## 🙌 Acknowledgments
 Inspiration for the design was taken from https://themewagon.com/themes/free-html5-personal-landing-page-template-noah/ and edited from here to suit my needs!
