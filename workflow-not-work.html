@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ash Ferris explores what cognitive task analysis reveals about translating human expertise into effective AI agents.">
+  <title>The Workflow Is Not the Work — Ash Ferris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="wordmark" href="index.html">Ash Ferris</a><nav aria-label="Primary navigation"><a href="writing.html">Writing</a><a href="experiments.html">Experiments</a><a href="practice.html">Practice</a><a href="about.html">About</a></nav><a class="header-contact" href="mailto:ashjferris@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a></header>
+  <main id="main">
+    <section class="page-hero"><p class="section-index">My writing — 002</p><h1>The Workflow Is Not the Work</h1><p>15 July 2026<br>11 min read</p></section>
+    <article class="article-shell">
+      <p class="article-meta">Agentic AI<br>Cognitive task analysis<br>Human expertise</p>
+      <div class="article-body">
+        <p class="standfirst">What cognitive task analysis reveals about translating human expertise into effective AI agents.</p>
+        <p>Ask an expert how they make a decision and they will usually give you a sensible answer. They will describe the information they consider, the steps they follow, and the rules that matter. For those of us translating that knowledge into an agentic AI system, this may seem sufficient.</p>
+        <p>There is just one problem: their account is often incomplete.</p>
+        <p>It is not because the expert is withholding information. Having expertise changes the explanation a person is able to give. Conscious steps become automatic, weak signals form recognisable patterns, and an unusual detail can feel wrong before the expert can explain why.</p>
+        <p>That is why a general question like “Can you talk me through your process?” tends to produce the outline of the work rather than the judgment that makes it expert.</p>
+        <p>Agentic AI has made this psychological phenomenon an engineering problem. We are asking systems to interpret situations, choose tools, make decisions, and act inside real workflows. To do this reliably, an agent needs more than access to what an organisation has written down. It needs some representation of how competent people notice, judge, and adapt.</p>
+        <h2>We have encountered this problem before</h2>
+        <p>Cognitive task analysis, or CTA, is a family of methods for identifying the knowledge, judgments, and cognitive strategies required to perform complex work. Traditional task analysis might describe what someone does: inspect a record, compare values, select an option, and escalate a case. CTA asks what makes those actions intelligent.</p>
+        <p>Its central lesson is simple: <em>the workflow is not the cognitive task.</em></p>
+        <p>Prompt writing is only one part of turning expertise into an agent. More documents and a newer model will not recover judgments that were never made explicit. This is fundamentally a knowledge-acquisition problem—with a new consequence: the resulting model can now make and act on decisions.</p>
+        <h2>What the workflow leaves out</h2>
+        <p>A workflow describes the visible sequence of activity. It tells us what normally happens, which systems are involved, and where responsibility moves. It rarely explains the cognition that keeps the workflow on course.</p>
+        <p>An experienced claims assessor may notice that two plausible documents are inconsistent, recognise a rare exception, know which missing information matters, or distinguish an unusual case from a suspicious one. A process map can include “review the evidence.” It cannot, by itself, tell us what evidence deserves attention or what competent review looks like.</p>
+        <p>The useful knowledge lies in how an expert moves from evidence to diagnosis and then to strategy. That reasoning is often missing from agent designs.</p>
+        <h2>Why experts leave things out</h2>
+        <p>As people become skilled, parts of their performance become automatic. When asked to explain their work, they may omit information a novice would need—not because it is unimportant, but because it has become obvious to them.</p>
+        <p>Cognitive task analysis uses deliberate questions to uncover what an ordinary interview misses. Instead of asking for a general process, it reconstructs a specific difficult incident and probes for cues, expectations, alternatives, uncertainty, and the moment the expert’s understanding changed.</p>
+        <p>Good interviewers learn to notice apparently simple cognitive verbs: <em>recognise, assess, notice, realise, suspect.</em> Each can conceal an entire operation.</p>
+        <h2>Knowledge representation is an architectural decision</h2>
+        <p>Elicited knowledge has to be represented for a purpose. A stable calculation may become deterministic code. A policy definition may belong in retrieval. A categorical distinction might become an ontology. A repeated judgment could be expressed through examples or model instructions. A hard constraint may need to be enforced through tool permissions.</p>
+        <p>Where we place knowledge reflects what we believe about it. A rule in a prompt may be interpreted. A rule in code must hold. An approval gate says the system is not authorised to resolve that judgment independently.</p>
+        <h2>A good agent inherits expert restraint</h2>
+        <p>Most attempts to transfer expertise focus on what the expert concludes, but equally important is when the expert does not conclude. Experienced practitioners know when evidence is absent, when a familiar pattern is weak, and when the consequences justify another opinion.</p>
+        <p>An agent that reproduces expert answers without expert restraint has learned the most dangerous half of the job.</p>
+        <p>We should test not only whether an agent reaches the expected outcome, but whether it requests evidence when evidence is missing, distinguishes ambiguity from contradiction, and escalates cases whose consequences exceed its authority.</p>
+        <h2>The prototype is also an elicitation tool</h2>
+        <p>Discovery does not end before implementation begins. A prototype often reveals more about expertise than the initial interviews. An expert can react to a concrete agent decision in ways they cannot react to an abstract process map.</p>
+        <p>The prototype is not just testing the software. It is testing the team’s understanding of the work. A failure may reveal missing knowledge, incorrect data, a rule placed in the wrong part of the system, or an assumption that no longer holds.</p>
+        <h2>Deployment creates a new cognitive task</h2>
+        <p>Once an agent enters a workflow, the workflow itself changes. People may stop performing checks they believe the agent has completed, develop new skills in reviewing its output, or lose clarity about responsibility.</p>
+        <p>The original CTA described a human task. The deployed system is now a joint cognitive system. We need to understand where situational awareness lives, who notices deterioration, what the human still knows how to do, and whether a reviewer is equipped to recognise when the agent is wrong.</p>
+        <h2>The agent is a working hypothesis</h2>
+        <p>We should be careful with the language of “capturing” expertise. What we build is a partial, purpose-specific representation of judgment—not the expert’s experience itself.</p>
+        <p>A more useful question is: <em>Which judgments can this system reproduce, under which conditions, using which evidence—and does it know when those conditions no longer hold?</em></p>
+        <p>Cognitive task analysis can help us ask better questions before we encode an incomplete account of work into a system that acts. What an agent can contain is a visible, testable account of the judgments it has been designed to reproduce—one that can be challenged and revised as the work changes.</p>
+        <p><a class="text-link" href="https://medium.com/@ashjferris/the-workflow-is-not-the-work-c00f9d99f8a1" target="_blank" rel="noreferrer">Read the original article on Medium <span aria-hidden="true">↗</span></a></p>
+      </div>
+      <aside class="article-aside"><p>Originally published on <a class="text-link" href="https://medium.com/@ashjferris/the-workflow-is-not-the-work-c00f9d99f8a1" target="_blank" rel="noreferrer">Medium ↗</a></p></aside>
+    </article>
+  </main>
+  <footer class="site-footer"><p>© 2026 Ash Ferris</p><div><a href="https://www.linkedin.com/in/ashjferris/">LinkedIn</a><a href="https://github.com/ashjferris">GitHub</a><a href="https://medium.com/@ashjferris">Medium</a><a href="mailto:ashjferris@gmail.com">Email</a></div><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>
