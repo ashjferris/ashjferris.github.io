@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive experiment about AI confidence, evidence, and human judgment by Ash Ferris.">
+  <meta name="theme-color" content="#f3efe6">
+  <title>Calibrating Confidence — Ash Ferris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <script defer src="dist/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="wordmark" href="index.html">Ash Ferris</a><nav aria-label="Primary navigation"><a href="writing.html">Writing</a><a href="experiments.html" aria-current="page">Experiments</a><a href="practice.html">Practice</a><a href="about.html">About</a></nav><a class="header-contact" href="mailto:ashjferris@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a></header>
+  <main id="main" class="experiment-page">
+    <div class="experiment-shell" data-confidence-experiment>
+      <section class="experiment-intro" data-experiment-intro>
+        <p class="section-index">Experiment 01 — Human–AI judgment</p>
+        <h1>Calibrating<br><em>confidence.</em></h1>
+        <div class="experiment-intro-copy">
+          <p>You’ll make a series of decisions with help from an AI system. Sometimes it will be right. Sometimes it will be wrong.</p>
+          <p>Your task is to decide when its answer deserves your confidence.</p>
+        </div>
+        <aside class="experiment-notes"><p>10 questions<br>Approximately 6 minutes</p><p>No specialist knowledge is required. Your responses stay in this browser and are not submitted or stored.</p></aside>
+        <div class="experiment-actions"><button class="experiment-button" type="button" data-start-experiment>Begin experiment</button><span class="microcopy">Think carefully, but trust your first judgment.</span></div>
+      </section>
+
+      <section class="experiment-stage" data-experiment-stage hidden aria-live="polite">
+        <header class="trial-header"><p class="section-index" data-trial-phase>Your judgment</p><div class="trial-progress" aria-hidden="true"><span data-progress-bar></span></div><p class="trial-count" data-trial-count>Question 1 of 10</p></header>
+        <div data-trial-content></div>
+      </section>
+
+      <section class="experiment-results" data-experiment-results hidden>
+        <p class="section-index">Your calibration profile</p>
+        <h1 data-results-title>What changed when the system spoke?</h1>
+        <p class="results-lede" data-results-lede></p>
+        <div class="results-summary" data-results-summary></div>
+        <div class="results-detail" data-results-detail></div>
+        <aside class="results-aside"><p>This is an exploratory interactive demonstration, not a psychological assessment.</p><p>A well-calibrated decision-maker is not always confident or always sceptical. They become more confident when the evidence warrants it—and less confident when it does not.</p></aside>
+        <div class="results-actions"><button class="experiment-button" type="button" data-restart-experiment>Try again</button><a class="experiment-button experiment-button--quiet" href="experiments.html">Return to the lab</a></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><p>© 2026 Ash Ferris</p><div><a href="https://www.linkedin.com/in/ashjferris/">LinkedIn</a><a href="https://github.com/ashjferris">GitHub</a><a href="https://medium.com/@ashjferris">Medium</a><a href="mailto:ashjferris@gmail.com">Email</a></div><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive exploration of token probabilities, model-reported confidence, evidence, and correctness.">
+  <meta name="theme-color" content="#f3efe6">
+  <title>Certain Words, Uncertain Answers — Ash Ferris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css"><script defer src="dist/js/certain-words.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="wordmark" href="index.html">Ash Ferris</a><nav aria-label="Primary navigation"><a href="writing.html">Writing</a><a href="experiments.html" aria-current="page">Experiments</a><a href="practice.html">Practice</a><a href="about.html">About</a></nav><a class="header-contact" href="mailto:ashjferris@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a></header>
+  <main id="main" class="tokens-page" data-token-experiment>
+    <section class="tokens-hero">
+      <p class="section-index">Experiment 02 — Model uncertainty</p>
+      <h1>Certain words,<br><em>uncertain answers.</em></h1>
+      <div class="tokens-hero-copy"><p>Can a model be certain about what to say next without knowing whether what it says is true?</p></div>
+      <aside class="tokens-hero-aside"><p>Explore five illustrative generation traces. Select any token to see the alternatives the model might have produced.</p><p>The probability traces are curated for this explanatory prototype; they will be replaced with recorded model outputs before research use.</p></aside>
+      <div class="tokens-definition">
+        <article><h2>Generation certainty</h2><p>Token probability asks: given everything generated so far, how expected was this particular continuation?</p></article>
+        <article><h2>Reported confidence</h2><p>A confidence score asks the model to estimate whether its completed answer is correct. It is another generated response—not a direct reading of an internal belief.</p></article>
+      </div>
+    </section>
+
+    <section class="trace-lab" aria-labelledby="trace-title">
+      <div class="trace-nav"><p class="section-index" id="trace-title">Five model traces</p><div class="trace-nav-controls"><button type="button" data-trace-previous aria-label="Previous trace">←</button><button type="button" data-trace-next aria-label="Next trace">→</button></div></div>
+      <div class="trace-layout">
+        <p class="trace-index" data-trace-index>Trace 01 / 05</p>
+        <div class="trace-main"><h2 class="trace-question" data-trace-question></h2><p class="trace-answer-label">Select a token to inspect its probability</p><div class="token-stream" data-token-stream aria-label="Generated answer with token probabilities"></div><div class="token-detail" data-token-detail aria-live="polite"></div></div>
+        <aside class="trace-aside"><div class="trace-metric"><span>Mean token probability</span><strong data-token-mean></strong><div class="trace-meter"><i data-token-meter></i></div></div><div class="trace-metric"><span>Model-reported confidence</span><strong data-reported-confidence></strong><div class="trace-meter"><i data-confidence-meter></i></div></div><div class="trace-metric"><span>Answer outcome</span><strong class="trace-outcome" data-trace-outcome></strong></div><p class="trace-note" data-trace-note></p></aside>
+      </div>
+    </section>
+
+    <section class="confidence-map-section" aria-labelledby="map-title">
+      <p class="section-index">The confidence map</p>
+      <div class="confidence-map-copy"><h2 id="map-title">Fluency and self-reported confidence can disagree.</h2><p>Each mark is one response. Circles are correct; diamonds are incorrect. Select a mark to return to that trace.</p><div class="confidence-map" data-confidence-map role="img" aria-label="Plot comparing average token probability with model-reported confidence"><span class="map-axis-x">Mean token probability</span><span class="map-axis-y">Reported confidence</span><span class="map-end map-end--xl">50%</span><span class="map-end map-end--xh">100%</span><span class="map-end map-end--yl">50%</span><span class="map-end map-end--yh">100%</span></div><div class="map-legend"><span><i></i> Correct answer</span><span><i></i> Incorrect answer</span></div></div>
+    </section>
+
+    <section class="signals-section" aria-labelledby="signals-title">
+      <p class="section-index">When each signal helps</p>
+      <article><h2 id="signals-title">Token probability</h2><ul><li>Finds unstable words, names, classifications, and extracted values.</li><li>Shows when several continuations were locally plausible.</li><li>Supports ranking in tightly constrained prediction tasks.</li><li>Does not establish whether the completed claim is true.</li></ul></article>
+      <article><h2>Reported confidence</h2><ul><li>Can reflect ambiguity, missing evidence, or reasoning difficulty.</li><li>Can help decide when verification or escalation is warranted.</li><li>Needs calibration against observed correctness.</li><li>May repeat the same misconception as the original answer.</li></ul></article>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© 2026 Ash Ferris</p><div><a href="https://www.linkedin.com/in/ashjferris/">LinkedIn</a><a href="https://github.com/ashjferris">GitHub</a><a href="https://medium.com/@ashjferris">Medium</a><a href="mailto:ashjferris@gmail.com">Email</a></div><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>
