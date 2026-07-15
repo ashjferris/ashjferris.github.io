@@ -38,12 +38,14 @@ h1 em { color: var(--accent); font-weight: 400; }
 
 .knowledge-field { min-width: 0; align-self: stretch; position: relative; border-left: 1px solid var(--rule); padding-left: 28px; }
 .field-heading { display: flex; justify-content: space-between; }
-.knowledge-field svg { display: block; width: 100%; height: auto; max-height: 650px; overflow: visible; }
+.knowledge-field svg { display: block; width: 100%; height: auto; max-height: 650px; overflow: visible; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; touch-action: none; }
 .graph-lines line { stroke: var(--rule); stroke-width: 1; transition: stroke .25s, stroke-width .25s; }
 .graph-mesh { pointer-events: none; }
 .mesh-lines line { stroke: var(--rule); stroke-width: .7; opacity: .48; }
 .mesh-nodes circle { fill: var(--paper); stroke: var(--stone); stroke-width: .8; opacity: .7; }
-.graph-node { cursor: pointer; transform-box: fill-box; transform-origin: center; }
+.graph-node { cursor: grab; transform-box: fill-box; transform-origin: center; }
+.graph-node.is-dragging { cursor: grabbing; }
+.graph-node a:focus, .graph-node a:focus-visible { outline: none; }
 .graph-node circle { fill: var(--paper); stroke: var(--ink); stroke-width: 1; transition: fill .25s, stroke .25s, stroke-width .25s; }
 .graph-node text { fill: var(--ink); font-family: var(--sans); font-size: 12px; letter-spacing: .04em; pointer-events: none; }
 .graph-node--major circle { fill: var(--ink); }
